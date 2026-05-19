@@ -2,20 +2,131 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aamir's App Store</title>
-    <style>
-        body { font-family: sans-serif; background: #0f172a; color: white; text-align: center; padding: 20px; }
-        .card { background: #1e293b; padding: 20px; border-radius: 20px; max-width: 400px; margin: auto; border: 1px solid #334155; }
-        .btn { display: block; background: #38bdf8; color: #0f172a; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 20px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aamir's App Store</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+    color:white;
+    text-align:center;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    padding:30px;
+    max-width:400px;
+    width:100%;
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+    animation:fadeIn 1s ease;
+}
+
+.logo{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+p{
+    color:#cbd5e1;
+    margin-bottom:25px;
+    line-height:1.5;
+}
+
+.btn{
+    display:block;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:15px;
+    border-radius:15px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.3s;
+    margin-top:15px;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#0ea5e9;
+}
+
+.share{
+    background:#22c55e;
+}
+
+.share:hover{
+    background:#16a34a;
+}
+
+.footer{
+    margin-top:20px;
+    font-size:14px;
+    color:#94a3b8;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
 </head>
+
 <body>
-    <div class="card">
-        <h1>🚀 Aamir's App Store</h1>
-        <p>मेरी ऐप नीचे से डाउनलोड करें:</p>
-        <a href="https://drive.google.com/uc?id=1Y96w0fcGLKTHRPM7-6fRe1v056dvzs0e&export=download" class="btn">📥 डाउनलोड APK</a>
-    </div>
+
+<div class="card">
+
+<div class="logo">🚀</div>
+
+<h1>Aamir's App Store</h1>
+
+<p>
+यह मेरी ऑफिशियल ऐप स्टोर वेबसाइट है।  
+नीचे दिए गए बटन से ऐप डाउनलोड करें और अपने दोस्तों के साथ शेयर करें।
+</p>
+
+<a href="https://drive.google.com/uc?id=1Y96w0fcGLKTHRPM7-6fRe1v056dvzs0e&export=download" class="btn">
+📥 डाउनलोड APK
+</a>
+
+<a href="https://wa.me/" class="btn share">
+📢 शेयर करें
+</a>
+
+<div class="footer">
+Made with ❤️ by Aamir
+</div>
+
+</div>
+
 </body>
 </html>
